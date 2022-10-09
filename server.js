@@ -74,14 +74,3 @@ const PORT = process.env.PORT || 5000;
 server.listen(PORT , () =>{
 console.log(`server started on port ${PORT}`)
 });
-
-
-
-// io = require('http').Server(app);
-var socket = require('socket.io')(io);
-
-socket.on('connect',function(socket){
-    console.log('got a connection')
-});
-
-io.listen(3000)
